@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
-import { ImageCarouselModal } from '../carousel/carousel-modal'
+import { ImageCarouselModal } from '@/app/ui/carousel/carousel-modal'
 
 interface BreedImagesGridClientProps {
   images: string[]

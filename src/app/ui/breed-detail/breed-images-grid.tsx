@@ -1,5 +1,5 @@
 import { breedService } from '@/app/lib/api/dogs'
-import { BreedImagesGridClient } from './breed-images-grid-client'
+import { BreedImagesGridClient } from '@/app/ui/breed-detail/breed-images-grid-client'
 
 interface BreedImagesGridProps {
   breedName: string

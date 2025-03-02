@@ -3,9 +3,9 @@ import { useKeyboardNavigation } from '@/app/hooks/useKeyboardNavigation'
 import { useBodyScrollLock } from '@/app/hooks/useBodyScrollLock'
 import { CarouselButton } from '@/app/ui/carousel/carousel-button'
 import { CarouselImage } from '@/app/ui/carousel/carousel-image'
-import { CloseIcon } from '../icons/close-icon'
-import { PreviousIcon } from '../icons/previous-icon'
-import { NextIcon } from '../icons/next-icon'
+import { CloseIcon } from '@/app/ui/icons/close-icon'
+import { PreviousIcon } from '@/app/ui/icons/previous-icon'
+import { NextIcon } from '@/app/ui/icons/next-icon'
 
 interface ImageCarouselModalProps {
   isOpen: boolean

@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { PreviousIcon } from '../icons/previous-icon'
+import { PreviousIcon } from '@/app/ui/icons/previous-icon'
 interface BreedDetailHeaderProps {
   breedName: string
 }
