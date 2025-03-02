@@ -10,4 +10,5 @@ export interface BreedImagesResponse {
 
 export interface BreedService {
   getAllBreeds: () => Promise<string[]>
+  getBreedImages: (breed: string, count?: number) => Promise<string[]>
 }

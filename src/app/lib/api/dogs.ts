@@ -1,4 +1,4 @@
-import type { BreedListResponse, BreedService } from './types'
+import type { BreedListResponse, BreedImagesResponse, BreedService } from './types'
 
 const BASE_URL = 'https://dog.ceo/api'
 
@@ -7,5 +7,11 @@ export const breedService: BreedService = {
     const response = await fetch(`${BASE_URL}/breeds/list/all`)
     const data: BreedListResponse = await response.json()
     return Object.keys(data.message)
+  },
+
+  async getBreedImages(breed: string, count: number = 50) {
+    const response = await fetch(`${BASE_URL}/breed/${breed}/images/random/${count}`)
+    const data: BreedImagesResponse = await response.json()
+    return data.message
   }
 }
