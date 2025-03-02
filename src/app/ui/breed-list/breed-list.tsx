@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { breedService } from '@/app/lib/api/dogs'
+import { DogAvatar } from '@/app/ui/icons/dog-avatar'
 
 interface BreedListProps {
   query: string
@@ -34,7 +35,9 @@ export async function BreedList({ query }: BreedListProps) {
           href={`/breed/${breedName}`}
           className="w-full h-20 flex items-center px-6 py-4 hover:bg-gray-50 transition-colors border-b border-gray-200 last:border-b-0 focus:outline-none focus:bg-gray-50"
         >
-          <div className="w-12 h-12 rounded-full bg-custom-gray-300 mr-4" />
+          <div className="w-12 h-12 flex-shrink-0 mr-4 rounded-full overflow-hidden">
+            <DogAvatar />
+          </div>
           <span className="text-lg capitalize text-gray-900">{breedName}</span>
         </Link>
       ))}
