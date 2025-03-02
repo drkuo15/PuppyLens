@@ -1,8 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PuppyLens 🐶
+
+![PuppyLens Preview](/public/images/PuppyLens.png)
+
+A modern web application for browsing and exploring dog breeds using the Dog CEO API. Built with Next.js 15 and React 19. [Visit PuppyLens >>](https://puppy-lens.vercel.app/)
+
+## Features
+
+- Browse a comprehensive list of dog breeds
+- Search for specific breeds
+- View image galleries for each breed
+- Responsive design for all devices
+- Fast loading with optimized images
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18.17.0 or later
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/PuppyLens.git
+   cd PuppyLens
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   # or
+   bun install
+   ```
+
+### Running the Development Server
+
+Run the development server with Turbopack for faster builds:
 
 ```bash
 npm run dev
@@ -14,23 +52,63 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+# or
+yarn build
+# or
+pnpm build
+# or
+bun build
+```
 
-## Learn More
+### Starting the Production Server
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run start
+# or
+yarn start
+# or
+pnpm start
+# or
+bun start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Architecture
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Next.js 15**: Leveraging the App Router for server components and improved performance
+- **React 19**: Using the latest React features for optimal rendering
+- **Server Components**: Utilizing React Server Components for improved initial load performance and SEO
+- **Suspense**: Implementing React Suspense for better loading states and user experience
 
-## Deploy on Vercel
+### Performance Optimizations
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Turbopack**: Using Turbopack for faster development builds
+- **Lazy Loading**: Images are loaded only when needed
+- **Server-side Rendering**: Critical data is fetched on the server for faster initial page loads
+- **Client-side Caching**: Implementing efficient caching strategies for API responses
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### UI/UX
+
+- **Tailwind CSS**: For responsive and utility-first styling
+- **Mobile-first Design**: Ensuring a great experience on all device sizes
+- **Skeleton Loading States**: Providing visual feedback during data loading
+
+### Development Workflow
+
+- **TypeScript**: For type safety and better developer experience
+- **ESLint**: For code quality and consistency
+- **Commitizen**: For standardized commit messages
+
+## Roadmap
+
+- Implement infinite scrolling for breed images
+- Add favorites functionality to save preferred breeds
+
+
+
+

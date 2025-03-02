@@ -1,24 +1,24 @@
 @import "tailwindcss";
 
-@theme {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  button, [role="button"] {
+    cursor: pointer;
   }
+  body {
+    color: var(--color-custom-gray-900);
+    background-color: var(--color-custom-white);
+  } 
+  html {
+    scrollbar-gutter: stable;
+  }  
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* Define custom colors */
+@theme {
+  --color-custom-white: #FFFFFF;
+  --color-custom-gray-200: #DDDDDD;
+  --color-custom-gray-300: #C4C4C4;
+  --color-custom-gray-900: #434343;
+  --color-custom-black: #000000;
 }
+
