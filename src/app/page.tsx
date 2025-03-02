@@ -1,5 +1,5 @@
-import { SearchBar } from '@/app/ui/breeds/search-bar'
-import { BreedList } from '@/app/ui/breeds/breed-list'
+import { SearchBar } from '@/app/ui/breed-list/search-bar'
+import { BreedList } from '@/app/ui/breed-list/breed-list'
 import { BreedListSkeleton } from '@/app/ui/skeletons'
 import { Suspense } from 'react'
 
