@@ -7,9 +7,9 @@ import { BreedDetailHeader } from '@/app/ui/breed-detail/breed-header'
 export default async function BreedDetailPage({
   params,
 }: {
-  params: {
+  params: Promise<{
     breedName: string
-  }
+  }>
 }) {
   const { breedName } = await params
 
