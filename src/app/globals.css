@@ -4,6 +4,13 @@
   button, [role="button"] {
     cursor: pointer;
   }
+  body {
+    color: var(--color-custom-gray-900);
+    background-color: var(--color-custom-white);
+  } 
+  html {
+    scrollbar-gutter: stable;
+  }  
 }
 
 /* Define custom colors */
@@ -15,8 +22,3 @@
   --color-custom-black: #000000;
 }
 
-body {
-  color: var(--color-custom-gray-900);
-  background: var(--color-custom-white);
-  font-family: Arial, Helvetica, sans-serif;
-}
